@@ -26,7 +26,6 @@
 /*chillax*/
 @import url('https://warrayquipsome.github.io/Chillax/chillax.css');
 
-
 /* More Fonts; I added a bunch to mess around with. Add your own if you don't like these :) */
 @import url('https://fonts.googleapis.com/css2?family=Slackside+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
@@ -40,7 +39,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
 
-
 /* ---------------------------------------------------------------------------- */
 
 /* removable addons; you can change the emoji type if you change 'Google' to something else, most of the other ones make the theme look nicer */
@@ -51,7 +49,7 @@
 @import url("https://warrayquipsome.github.io/Chillax/Addons/AvatarOnlyMemberList.css");
 @import url("https://warrayquipsome.github.io/Chillax/Addons/FolderRedesign.css");
 
-/* additional addons */ 
+/* additional addons */
 /* you can remove the slashes and astrisks on the ends to use; I disabled it because it was making my discord lag more ironically and it was breaking a few things I didn't want to deal with lol */
 /*@import url("https://warrayquipsome.github.io/Chillax/Addons/SimpleLessLag.css");*/
 
@@ -62,9 +60,9 @@
     --background-image: var(--wallpaper);
     /* bg/wallpaper - replace the link with image link */
     --wallpaper: url('https://images6.alphacoders.com/129/1290982.png');
-    
-     /*modern background selection*/
-    
+
+    /*modern background selection*/
+
 }
 
 
@@ -176,52 +174,58 @@
 }
 
 
-
 /* ---------------------------------------------------------------------------- */
 
 /*chatbox recolour*/
 .input-2g-os5,
-.scrollableContainer__33e06{
-  background-color: transparent!important;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  outline: none;
-  box-shadow: 1px 3px 3px #00000030;
+.scrollableContainer_d0696b {
+    background-color: transparent !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    outline: none;
+    box-shadow: 1px 3px 3px #00000030;
 }
-.placeholder_e68c63.slateTextArea__0661c.fontSize16Padding__48818{
-  color: transparent!important;
+
+.placeholder_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b {
+    color: transparent !important;
 }
+
 .theme-dark .input-2g-os5:hover,
-.theme-dark .scrollableContainer__33e06:hover {
-  background-color: #abcdef13!important; /* hovering over chatbox bar */
-  box-shadow: 1px 3px 3px #00000070;
+.theme-dark .scrollableContainer_d0696b:hover {
+    background-color: #abcdef13 !important; /* hovering over chatbox bar */
+    box-shadow: 1px 3px 3px #00000070;
 }
+
 .theme-dark .input-2g-os5:focus-within,
-.theme-dark .scrollableContainer__33e06:focus-within {
-  background-color: #abcdef42!important;
-  box-shadow: 1px 3px 3px #00000070;
+.theme-dark .scrollableContainer_d0696b:focus-within {
+    background-color: #abcdef42 !important;
+    box-shadow: 1px 3px 3px #00000070;
 }
-.message__80c10 {
-  border-radius: 8px !important;
+
+.message_d5deea {
+    border-radius: 8px !important;
 }
-.mentioned__58017  {
-  border-radius: 0 8px 8px 0!important
+
+.mentioned_d5deea {
+    border-radius: 0 8px 8px 0 !important
 }
+
 /*Textbox Text*/
-.theme-dark .placeholder_e68c63 {
-  visibility: hidden !important;
+.theme-dark .placeholder_a552a6 {
+    visibility: hidden !important;
 }
-.theme-dark .placeholder_e68c63::before {
-  content: "Remember to Breathe";
-  color: #ffffff50;
-  font-family: "Macondo Swash Caps";
-  font-size: 30px;
-  visibility: visible !important;
+
+.theme-dark .placeholder_a552a6::before {
+    content: "Remember to Breathe";
+    color: #ffffff50;
+    font-family: "Macondo Swash Caps";
+    font-size: 30px;
+    visibility: visible !important;
 }
 
 /* ---------------------------------------------------------------------------- */
 
 /*floating user controls*/
-.theme-dark .panels__58331 {
+.theme-dark .panels_a4d4d9 {
     background: #abcdef33 !important;
     box-shadow: 0px 3px 5px #111a27;
     border-radius: 12px;
@@ -230,19 +234,19 @@
     bottom: 0;
     left: 0;
     right: 0;
-  }
-  
-  .container_debb33 {
+}
+
+.container_b2ca13 {
     background: transparent !important;
-  }
-  
-  .sidebar_e031be {
+}
+
+.sidebar_a4d4d9 {
     background-color: transparent;
     position: relative;
     overflow: hidden;
-  }
-  
-  .theme-dark .sidebar_e031be .content__690c5:after {
+}
+
+.theme-dark .sidebar_a4d4d9 .content_eed6a8:after {
     content: 'this big gap is for the floating user controls, so sry if it looks ugly';
     font-size: 13px;
     color: transparent;
@@ -251,108 +255,98 @@
     margin-top: 50px;
     height: 340px;
     display: block;
-  }
-  
-  .panels__58331 > .container_debb33 .flex_f18b02 > :not(:last-child) {
+}
+
+.panels_a4d4d9 > .container_b2ca13 .flex_bba380 > :not(:last-child) {
     opacity: 50% !important; /* quick fix for always visible mute/deafen icons */
     width: 50px;
     transition: all 0.3s;
-  }
-  
-  
+}
 
-  .theme-dark .panels__58331 > .container_debb33:hover .flex_f18b02 > :not(:last-child) {
+
+.theme-dark .panels_a4d4d9 > .container_b2ca13:hover .flex_bba380 > :not(:last-child) {
     opacity: 75% !important; /* hover of the quick fix for visible mute/deafen icons */
     width: 40px;
     margin-left: 10px;
-  }
-  
-  .button_ae40a4[aria-label="User Settings"] {
+}
+
+.button_f67531[aria-label="User Settings"] {
     margin-left: 10px;
-  }
-  
-  .container-6sXIoE .alignStretch__2d62d.flex__9487d {
+}
+
+.container-6sXIoE .alignStretch_ec1a20.flex_ec1a20 {
     max-width: 190px;
     min-width: 190px;
-  }
-  
-  .details-ntX2k5 {
+}
+
+.details-ntX2k5 {
     max-width: 805px !important;
     min-width: 805px !important;
-  }
-  
-  .maximized-vv2Wr0 .details-ntX2k5 {
+}
+
+.maximized-vv2Wr0 .details-ntX2k5 {
     max-width: 190px !important;
     min-width: 190px !important;
     position: relative;
     display: block;
     left: 0px;
-  }
-  
-  .maximized-vv2Wr0 .cover-SwJ-ck {
+}
+
+.maximized-vv2Wr0 .cover-SwJ-ck {
     border-radius: 8px 8px 0px 0px;
-  }
-  
-  /* Avatar in bottom left */
-  .avatarWrapper__500a6 {
+}
+
+/* Avatar in bottom left */
+.avatarWrapper_b2ca13 {
     max-width: 36px;
     min-width: 36px;
     transition: 0.3s;
-  }
-  
-  .avatarWrapper__500a6:hover {
+}
+
+.avatarWrapper_b2ca13:hover {
     max-width: 207px;
     min-width: 207px;
     transition: 0.7s;
     background: #00000000 !important; /* bg when hover over avatar icon */
-  min-width: 205px !important; /* no lower than 205, pushes activity icons over to show name */
-  }
-  
-  
-  /* Fix for Vencord Game Activity Toggle Plugin */
-  
-  .container_debb33:has(button[aria-label='Enable Game Activity']) > :first-child {
+    min-width: 205px !important; /* no lower than 205, pushes activity icons over to show name */
+}
+
+
+/* Fix for Vencord Game Activity Toggle Plugin */
+
+.container_b2ca13:has(button[aria-label='Enable Game Activity']) > :first-child {
     min-width: 36px !important;
-  }
-  
-  .container_debb33:has(button[aria-label='Enable Game Activity']) > :first-child:hover {
+}
+
+.container_b2ca13:has(button[aria-label='Enable Game Activity']) > :first-child:hover {
     min-width: 207px !important;
-  }
-  
-  .panels__58331 > .container_debb33:has(button[aria-label='Enable Game Activity']) .flex_f18b02 > :not(:last-child) {
+}
+
+.panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Enable Game Activity']) .flex_bba380 > :not(:last-child) {
     width: 38px !important;
-  }
-  
-  .theme-dark .panels__58331 > .container_debb33:has(button[aria-label='Enable Game Activity']):hover .flex_f18b02 > :not(:last-child) {
+}
+
+.theme-dark .panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Enable Game Activity']):hover .flex_bba380 > :not(:last-child) {
     margin-left: 0px !important;
-  }
-  
-  .container_debb33:has(button[aria-label='Disable Game Activity']) > :first-child {
+}
+
+.container_b2ca13:has(button[aria-label='Disable Game Activity']) > :first-child {
     min-width: 36px !important;
-  }
-  
-  .container_debb33:has(button[aria-label='Disable Game Activity']) > :first-child:hover {
+}
+
+.container_b2ca13:has(button[aria-label='Disable Game Activity']) > :first-child:hover {
     min-width: 207px !important;
-  }
-  
-  .panels__58331 > .container_debb33:has(button[aria-label='Disable Game Activity']) .flex_f18b02 > :not(:last-child) {
+}
+
+.panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Disable Game Activity']) .flex_bba380 > :not(:last-child) {
     width: 38px !important;
-  }
-  
-  .theme-dark .panels__58331 > .container_debb33:has(button[aria-label='Disable Game Activity']):hover .flex_f18b02 > :not(:last-child) {
+}
+
+.theme-dark .panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Disable Game Activity']):hover .flex_bba380 > :not(:last-child) {
     margin-left: 0px !important;
-  }
-  
-  /* End of the if*/
+}
 
-
-
-
-
-
-
-
-
+/* End of the if*/
 
 
 /*Permissions*/

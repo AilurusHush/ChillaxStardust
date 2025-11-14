@@ -1,0 +1,536 @@
+/**
+ * @name Chillax Stardust
+ * @author Chillax Squad, Edited by Hush
+ * @authorLink https://github.com/warrayquipsome/Chillax#Authors
+ * @version 2.1.2
+ * @invite DrfX6286kF
+ * @description The theme where calm meets customization.
+ * @source https://github.com/warrayquipsome/Chillax
+*/
+
+/* This is the 'Stardust' edit by @AilurusHush with direct permission. Updates for this theme edit is on the official Chillax Discord */
+
+/*
+     ⸙  ────     ────     ───── ❝ 𝐚𝐥𝐥 𝐫𝐢𝐠𝐡𝐭 𝐡𝐞𝐫𝐞 ❞ ─────    ────     ────  ⸙
+  ╭─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻🂡༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╮
+          █████╗   ██╗  ██╗  ██╗  ██╗      ██╗       █████╗   ██╗  ██╗
+         ██╔══██╗  ██║  ██║  ██║  ██║      ██║      ██╔══██╗  ╚██╗██╔╝
+  ||     ██║  ╚═╝  ███████║  ██║  ██║      ██║      ███████║   ╚███╔╝      ||
+         ██║  ██╗  ██╔══██║  ██║  ██║      ██║      ██╔══██║   ██╔██╗
+         ╚█████╔╝  ██║  ██║  ██║  ███████╗ ███████╗ ██║  ██║  ██╔╝╚██╗
+          ╚════╝   ╚═╝  ╚═╝  ╚═╝  ╚══════╝ ╚══════╝ ╚═╝  ╚═╝  ╚═╝  ╚═╝
+  ╰─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻-༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╯
+*/
+
+/* CHILLAX theme entry point - don't remove */
+@import url("https://warrayquipsome.github.io/Chillax/chillax.css");
+
+/* removable addons; you can change the emoji type if you change the word 'Google' to some other emoji type; the other files make the theme look nicer */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Google.css");
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css");
+@import url("https://chillax-org.github.io/Discolored/main.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/IconPackEdited.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/AvatarOnlyMemberList.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/FolderRedesign.css");
+@import url("https://raw.githubusercontent.com/DiscordStyles/RadialStatus/refs/heads/deploy/RadialStatus.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/FriendGrid.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/ColoredLinks.css");
+
+/*additional addons; remove the both astrisks either side of the import url to use)*/
+
+/* To hide annoying elements such as nitro, shop, sticker picker etc tab (remove the both * to use)*/
+/*@import url("https://warrayquipsome.github.io/Chillax/Addons/HideAnnoyingElements.css");*/
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* Active Fonts; You can replace/add your own if you don't like these ones :) */
+@import url('https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+/*
+Other recommended options to replace the above fonts - You would need to move these to active then find where the last two active fonts were being used below and replace accordingly.
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap'); 
+*/
+
+
+/* ---------------------------------------------------------------------------- */
+
+
+/*Chillax Roots*/
+:root {
+    /*background image*/ /*(replace the link to use)*/
+    --background-image: var(--wallpaper);
+    --bg-opacity: 100%;
+    /*bg dev suggestions*/
+    --wallpaper: url("https://images6.alphacoders.com/129/1290982.png");
+    /*modern background selection*/
+    --modern-dark-bg: url("https://images6.alphacoders.com/129/1290982.png");
+    --modern-light-bg: url("https://images6.alphacoders.com/129/1290982.png");
+}
+
+
+/*window*/ /*dark mode*/
+:root.theme-dark {
+    --window-margin: 20px; /*must be above 20px*/
+    --window-colour: #00224466;
+    --window-blur: 5px;
+    --window-border-radius: 20px; /* rounded corners of main container */
+    --sidebar-colour: #abcdef; /* sidebar in settings, under the matching 'overlay' listed below */
+}
+
+
+/*window*/ /*light mode*/
+:root.theme-light {
+    --window-margin: 20px; /*must be above 20px*/
+    --window-colour: #00224466;
+    --window-blur: 5px;
+    --window-border-radius: 20px;
+    --sidebar-colour: #abcdef;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/*welcome text*/
+.theme-dark body:before {
+    content: "Greetings " var(--user-name) "!";
+    font-family: "Macondo Swash Caps";
+    color: #fff;
+    background-color: #315774cc;
+    top: 0px;
+    left: 51%;
+    position: absolute;
+    border-radius: 10px;
+    padding: 5px 15px;
+    transform: translate(-50%, -100%);
+    animation: chl 5s ease;
+    animation-delay: 2s;
+}
+
+
+/*roots*/ /*both dark and light*/
+:root {
+    --user-name: "Traveler";
+    --edited-message: "💠ꕥ💠";
+    --font-name: Mynerve; /* recommended; set UI Density to 'Spacious' and Chat Font Scaling to '24px' in Discord Appearance Section */
+    --font-size: 20px; /* I have it set kinda big cause I'm blind, plus some of the fonts letters like 'g' get cut off a little when smaller */
+    --group-chat-font: Macondo; /* change this to change the group chats default font */
+
+
+/*Render the original edited text invisible*/
+.edited_c19a55::before {
+    content: var(--edited-message); /*Put the edited icon before the original edited text.*/
+    color: var(--text-muted); /*Give it the same muted color as the edited text.*/
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+
+    /*glow radial status*/ /*must end in px*/
+    --rs-small-spacing: 0px;
+    --rs-large-spacing: 0px;
+    --rs-medium-spacing: 0px;
+    --rs-small-width: 2.5px;
+    --rs-medium-width: 3.5px;
+    --rs-large-width: 4.5px;
+    --rs-avatar-shape: 50%;
+    --rs-online-color: #119922;
+    --rs-idle-color: #ee7700;
+    --rs-dnd-color: #660000;
+    --rs-offline-color: #404040;
+    --rs-streaming-color: #5500ff;
+    --rs-invisible-color: #404040;
+    --rs-phone-visible: block; /* change it to 'none' to disable mobile icon */
+    --rs-phone-color: var(--rs-online-color);
+
+
+    /* ---------------------------------------------------------------------------- */
+
+    /* For accent color to take full effect must change both */
+    /* chillax colours rgb */
+    --accentcolor: 171, 205, 239; /* must be written like this or element turns invisible */
+    /* chillax colours hex */
+    --accentcolorV2: #abcdefaa;
+    /* second option changes new reply tag-bar left of messages, forum post emoji reactions, and buttons when streaming */
+
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* settings modal root */
+    --themelightsettingsmodalbackground: #abcdefaa;
+    --themedarksettingsmodalbackground: #304050aa; /* appart of settings modal bg when it loads */
+    --settingsmodalwidth: 960px;
+    --settingsmodalheight: 80vh;
+
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* avatar only member list; rounded corners */
+    --memberlist-border-radius: 20px; /* can be in `px`, `rem`, `em` */
+
+
+/* color gradient of the member list on hover */
+.members_c8ffbb:hover {
+    background: content-box linear-gradient(90deg, #153352 20%, #abcdef3a 100%); 
+}
+
+/* hover margin at bottom of member list; moves it up out of the way */
+.members_c8ffbb:hover {
+    border-radius: var(--memberlist-border-radius) 0 0 var(--memberlist-border-radius);
+    margin-right: 0px;
+    margin-bottom: 60px;
+}
+
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* placeholder texts/values */
+    /* input fields */
+    --chillax-input-field: "~ Remember to Breathe ~";
+    /* input fields  when the channel is locked*/
+    --chillax-input-field-locked: "~ Observe & Reflect ~";
+    /* typing indicator: when a single person is typing */
+    --chillax-input-typing-indicator-one-person: "is gathering their thoughts";
+    /* typing indicator: when more than one person is typing */
+    --chillax-input-typing-indicator-many-person: "are gathering their thoughts";
+
+
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* scroller; default is transparent) */
+    --chillax-scroller-color: #abcdef10; /* can change back to 'transparent' or other color */
+
+    /* ---------------------------------------------------------------------------- */
+
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* ---------------------------------------------------------------------------- */
+
+
+/*discord transparency*//*roots*/ /*theme dark*/
+.theme-dark {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #9d9d9d;
+    --channels-default: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(36, 36, 36);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+/*discord transparency*//*roots*/ /*theme light*/
+.theme-light {
+    --background-message-hover: rgba(255, 255, 255, 0.055);
+    --header-primary: rgb(0, 0, 0);
+    --header-secondary: #3f3f3f;
+    --text-normal: #303030;
+    --text-muted: #333333;
+    --channels-default: #585b5e;
+    --interactive-normal: #3a3a3a;
+    --interactive-hover: #333333;
+    --interactive-active: rgb(0, 0, 0);
+    --interactive-muted: #4f545c;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-tertiary: transparent;
+    --background-accent: rgb(30, 255, 0);
+    --activity-card-background: transparent;
+    --deprecated-panel-background: transparent;
+}
+
+    /* ---------------------------------------------------------------------------- */
+
+
+/* friends grid banner colour */ /* going to find out how to add png bg eventually*/
+.theme-dark {
+    --FG-cards-banner-background: #abcdef10 !important;
+}
+
+/*.theme-light {
+    --FG-cards-banner-background: transparent !important;
+}*/
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------Additional Edits for Stardust---------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+.sidebarRegionScroller__23e6b {
+    background-color: #223344aa; /* settings sidebar overlay*/
+}
+
+.container_f369db {
+    background-color: #22334410 !important; /* transparent bg container of whole forums area */
+    z-index: 0;
+}
+
+.container__9a337 {
+    background-color: #223344aa !important; /* something to do with forums */
+    box-shadow: 2px 5px 10px #223344aa;
+}
+
+    .container__9a337:hover {
+        background-color: #223344aa !important; /* hover over grid forums */
+        box-shadow: 2px 5px 10px #223344aa;
+    }
+
+.lookFilled__201d5 {
+    background-color: #f0f !important; /* not sure what this is */
+}
+
+.mainCard_f369db {
+    background-color: #123456aa !important; /* main forum card color */
+    box-shadow: 2px 5px 10px #223344aa;
+    width: 1040px;
+}
+
+.matchingPostsRow_f369db {
+    background-color: #123456aa !important; /* 'create new post/search bar' tip in forums area  */
+    box-shadow: 2px 5px 10px #223344aa;
+    width: 1015px;
+}
+
+.uploadInput__94439 {
+    background-color: #abcdefaa; /* bg of the upload pic icon in forum post area */
+    box-shadow: 2px 5px 10px #223344aa;
+}
+
+.tagsContainer_d9be46 {
+    background-color: #abcdefaa; /* bg of tags area when making new forum post that has them */
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px #223344aa;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+}
+
+.pill_a2c9e8 {
+    background-color: #abcdefaa; /* forum tag pill accent color */
+}
+
+.textContentFooter__9a337 {
+    background-color: #223344aa; /* image vignette in grid view */
+}
+
+.grid_f369db {
+    width: 80%; /* width of grid boxes in forums */
+    left: -5%;
+}
+
+
+
+
+    /* Spotify Player Control Squid GIF Adjustments */
+
+    /* Change the ulr in the `--chillax-spotify-control-squid-gif-url` css var to your liking */
+    --chillax-spotify-control-squid-gif-url: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/0c/Glow_Squid_BE1.gif";
+    /* adjust the height and width accordingly */
+    --chillax-spotify-control-squid-width: 25px;
+    --chillax-spotify-control-squid-height: 25px;
+}
+
+
+
+
+
+/*floating user controls*/ 
+/* below is turned off for now; i need to look up the new container nametags and futz with things */
+/*
+.panels_a4d4d9 {
+    background: #abcdef33 !important;
+    box-shadow: 0px 3px 5px #111a27;
+    border-radius: 12px;
+    margin: 10px 10px 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container_b2ca13 {
+    background: transparent !important;
+}
+
+.sidebar_a4d4d9 {
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar_a4d4d9 .content_eed6a8:after {
+    content: 'this big gap is for the floating user controls, so sry if it looks ugly';
+    font-size: 13px;
+    color: transparent;
+    text-align: center;
+    text-shadow: 0 0 15px transparent;
+    margin-top: 50px;
+    height: 340px;
+    display: block;
+}
+
+*/
+
+/*
+.panels_a4d4d9 > .container_b2ca13 .flex_bba380 > :not(:last-child) {
+    opacity: 50% !important; /* quick fix for always visible mute/deafen icons *
+    width: 50px;
+    transition: all 0.3s;
+}
+
+*/
+
+/*
+.panels_a4d4d9 > .container_b2ca13:hover .flex_bba380 > :not(:last-child) {
+    opacity: 75% !important; /* hover of the quick fix for visible mute/deafen icons *
+    width: 40px;
+    margin-left: 10px;
+}
+
+*/
+
+/*
+.button_f67531[aria-label="User Settings"] {
+    margin-left: 10px;
+}
+
+.container-6sXIoE .alignStretch_ec1a20.flex_ec1a20 {
+    max-width: 190px;
+    min-width: 190px;
+}
+
+.details-ntX2k5 {
+    max-width: 805px !important;
+    min-width: 805px !important;
+}
+
+.maximized-vv2Wr0 .details-ntX2k5 {
+    max-width: 190px !important;
+    min-width: 190px !important;
+    position: relative;
+    display: block;
+    left: 0px;
+}
+
+.maximized-vv2Wr0 .cover-SwJ-ck {
+    border-radius: 8px 8px 0px 0px;
+}
+*/
+
+
+/* Avatar in bottom left */
+
+/*
+.avatarWrapper_b2ca13 {
+    max-width: 36px;
+    min-width: 36px;
+    transition: 0.3s;
+}
+
+.avatarWrapper_b2ca13:hover {
+    max-width: 207px;
+    min-width: 207px;
+    transition: 0.7s;
+    background: #00000000 !important; /* bg when hover over avatar icon *
+    min-width: 205px !important; /* no lower than 205, pushes activity icons over to show name *
+}
+
+*/
+
+/* Fix for Vencord Game Activity Toggle Plugin */
+/*
+.container_b2ca13:has(button[aria-label='Enable Game Activity']) > :first-child {
+    min-width: 36px !important;
+}
+
+.container_b2ca13:has(button[aria-label='Enable Game Activity']) > :first-child:hover {
+    min-width: 207px !important;
+}
+
+.panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Enable Game Activity']) .flex_bba380 > :not(:last-child) {
+    width: 38px !important;
+}
+
+
+.panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Enable Game Activity']):hover .flex_bba380 > :not(:last-child) {
+    margin-left: 0px !important;
+}
+
+.container_b2ca13:has(button[aria-label='Disable Game Activity']) > :first-child {
+    min-width: 36px !important;
+}
+
+.container_b2ca13:has(button[aria-label='Disable Game Activity']) > :first-child:hover {
+    min-width: 207px !important;
+}
+
+
+.panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Disable Game Activity']) .flex_bba380 > :not(:last-child) {
+    width: 38px !important;
+}
+
+.panels_a4d4d9 > .container_b2ca13:has(button[aria-label='Disable Game Activity']):hover .flex_bba380 > :not(:last-child) {
+    margin-left: 0px !important;
+}*/
+
+
+    /* ------------------------------------------------------------------------------------------------------------------- */
+    /* -- There is more for me to update - some missing things here and there, but hopefully this works in the meantime -- */
+    /* ------------------------------------------------------------------------------------------------------------------- */
+
+
+/*Permissions*/
+/*
+- You do not have the rights to use our theme name Chillax™ on other projects
+- You do not have the rights to remove our theme watermark in the theme
+- You do not have the rights to change this theme author/dev/maintainer name to anyone
+*/
+
+/*credits*/
+/*
+========================= Chillax Squad =========================
+ Wq                                       Owner & Dev
+ LofiTurtle                               Dev & Maintainer
+ Inmoresentum                             Dev & Maintainer
+ Demented_Elmo                            Dev
+=================================================================
+ Embeds                                   by Alexis WyvernZu
+ Active Now CSS                           by Cedrick
+ Memberlist until hover                   by Cedrick
+ Hide User Buttons until Hover            by Commie Axolotl
+ Center profile badge, avatar and name    by Commie Axolotl
+ Account Details Grid                     by Dablulite
+ Blurple recolour                         by DevilBro
+ Emoji Replace                            by DevilBro
+ Settings Icons                           by DevilBro
+ Connection Issue Let Me Be               by Disease
+ Radial Status                            by Gibbu
+ About Me Clamp                           by ItMeSarah
+ Better Jump to Present Button            by Lonk
+ Better Mark As Read Button               by Lonk
+ IconPack                                 by Lavender
+ Discolored                               by Nyri4
+ Better Spotify Control                   by Uri
+=================================================================
+*/
+/*I really want to give a special shoutout to all of you for supporting me in this theme, thank you all.*/
